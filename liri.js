@@ -101,7 +101,7 @@ function spotifyThisSong() {
             console.log(`\nDRUMROLL PLEASE...\n\nArtist: ${data.tracks.items[i].album.artists[0].name} \nSong: ${data.tracks.items[i].name}\nAlbum: ${data.tracks.items[i].album.name}\nSpotify link: ${data.tracks.items[i].external_urls.spotify}\n\n - - - - -\n`)
         };
     });
-}
+};
 
 function movieThis() {
     console.log(`\n - - - - -\n\nSEARCHING FOR..."${userQuery}"`);
@@ -129,7 +129,6 @@ function doThis() {
             return console.log(error);
         }
         // CATCH DATA AND USE THE .SPLIT() METHOD TO SEPARATE OBJECTS WITHIN OUR NEW ARRAY
-        // let dataArr = data.split(",");
         var commandArr = response.split(",");
 
         // TAKE OBJECTS FROM RANDOM.TXT TO PASS AS PARAMETERS
